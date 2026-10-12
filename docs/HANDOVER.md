@@ -11,8 +11,9 @@ This repository is a starter for a surveyor to expand with his own Codex agents.
 3. `docs/architecture.md`: code responsibilities and extension points.
 4. `docs/research-notes.md`: primary-source grounding and domain-review checklist.
 5. `docs/equipment-profile.md`: the learner's reported equipment, connections, source checks, and unresolved details.
-6. `docs/mbes-primer.md`: multibeam concepts and acquisition dependencies.
-7. `Downloads/README.md`: source library, local filenames, and download links.
+6. `docs/vessel-workflow.md`: follow-up account of computers, connections, sonar navigation and interference.
+7. `docs/mbes-primer.md`: multibeam concepts and acquisition dependencies.
+8. `Downloads/README.md`: source library, local filenames, and download links.
 
 All these Markdown guides are intended to travel with the Git repository. No previous chat history is required to understand the project. Original third-party downloads under `Downloads/raw/` remain local and are excluded from Git; follow the source index to obtain them on another computer.
 
@@ -28,7 +29,7 @@ All these Markdown guides are intended to travel with the Git repository. No pre
 
 ## What needs the surveyor's input
 
-The learner has supplied an equipment list and logical connections, recorded in docs/equipment-profile.md. Exact versions, several hardware models, detailed interfaces, project specifications, recurring fault evidence, and promotion criteria remain unknown. Review the initial scenario before treating it as professional instruction. Begin with the friend-validation checklist in the research notes.
+The learner has supplied an equipment list and logical connections, recorded in docs/equipment-profile.md and docs/vessel-workflow.md. The later account names outbound GGA/ZDA/VTG/HDT messages but explicitly leaves COM/IP details unknown. Exact versions, several hardware models, detailed interfaces, project specifications, recurring fault evidence, and promotion criteria remain unknown. Review the initial scenario before treating it as professional instruction. Begin with the friend-validation checklist in the research notes.
 
 ## Suggested next session prompt
 

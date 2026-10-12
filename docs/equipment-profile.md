@@ -83,3 +83,7 @@ Primary sources inspected on **2026-10-12**. These establish general product cap
 | Kongsberg K-Sync | Coordinates hydroacoustic transmissions to separate interfering systems in time. Installed-generation capabilities and connected trigger interfaces need confirmation. | [K-Sync](https://www.kongsberg.com/what-we-do/ocean-space/seafloor-mapping/ksync/) |
 
 The distinction between measurement timestamps and transmission scheduling is a teaching interpretation of these capabilities, not a verified diagnosis of the noise the learner observed.
+
+## Follow-up workflow account
+
+The learner supplied a further account of topside PCs, serial/network connections, Hydrins motion outputs, NavAQ-to-sonar GGA/ZDA/VTG/HDT output, towfish bearing calculation, and suspected altimeter interference. See [vessel-workflow.md](vessel-workflow.md) for the reconstruction and remaining ambiguities. This refines the initial inventory without independently validating the vessel configuration.

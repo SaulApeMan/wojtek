@@ -66,3 +66,5 @@ See [docs/verification.md](docs/verification.md) for automated checks, the curre
 ## Learner equipment context
 
 [docs/equipment-profile.md](docs/equipment-profile.md) records the learner's reported Voxometer, EdgeTech 4205, Innomar/SESWIN, magnetometer, HiPAP, Veripos, Hydrins, Seapath and K-Sync setup. It separates reported vessel connections from manufacturer-verified capabilities and identifies the next information needed for realistic exercises.
+
+The follow-up [vessel workflow](docs/vessel-workflow.md) documents reported topside computers, data paths, sonar navigation outputs, towing geometry, and a suspected interference incident, with explicit questions for the learner.
