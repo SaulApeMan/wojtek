@@ -1,0 +1,12 @@
+{
+  "name": "survey-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An independent, offline educational survey configuration simulator.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" }
+}
