@@ -62,3 +62,7 @@ Read [docs/mbes-primer.md](docs/mbes-primer.md) for an introduction to multibeam
 ## Verification
 
 See [docs/verification.md](docs/verification.md) for automated checks, the current browser-testing limitation, and a manual acceptance checklist.
+
+## Learner equipment context
+
+[docs/equipment-profile.md](docs/equipment-profile.md) records the learner's reported Voxometer, EdgeTech 4205, Innomar/SESWIN, magnetometer, HiPAP, Veripos, Hydrins, Seapath and K-Sync setup. It separates reported vessel connections from manufacturer-verified capabilities and identifies the next information needed for realistic exercises.

@@ -66,3 +66,7 @@ For progression toward senior responsibilities, gradually remove hints and requi
 ## Research method
 
 Primary vendor and standards-body pages were inspected using the available web research tool. The installed Firecrawl CLI reported authentication but could not fetch account information, so its network path was not relied on. No confidential vessel data or private manuals were accessed.
+
+## Learner-specific equipment evidence
+
+See [equipment-profile.md](equipment-profile.md) for the equipment account supplied on 2026-10-12. It is a separate evidence layer from manufacturer documentation: product capabilities do not prove the vessel's exact configuration. Use its unresolved details when planning the next exercises.
