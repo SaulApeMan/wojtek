@@ -146,7 +146,7 @@ function renderMap() {
   if (state.telemetry.position) $('position-marker').setAttribute('transform', `translate(${state.telemetry.position[0]} ${state.telemetry.position[1]}) rotate(48)`);
   const overlay = $('map-overlay');
   const strong = overlay.querySelector('strong');
-  const detail = overlay.querySelector('div>span');
+  const detail = overlay.querySelector(':scope > div > span');
   overlay.classList.toggle('healthy', state.telemetry.receiving);
   overlay.querySelector('.warning-icon').textContent = state.telemetry.receiving ? '✓' : '!';
   if (state.telemetry.receiving) {

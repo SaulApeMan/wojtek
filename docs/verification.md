@@ -10,7 +10,7 @@ Date: 2026-10-12.
 
 The environment's sandbox disallows loopback client sockets. All ten final tests passed with approved local-network access. The live preview also returned HTTP 200. Restricted environments may require local-network permission for the integration test.
 
-Browser interaction and visual layout have **not** been verified end to end. The first preview attempt timed out while the server ran inside the sandbox. After moving the server to an approved local process, HTTP worked, but browser policy blocked access to the failed preview tab. No alternative browser-control route was used.
+Follow-up: the browser preview now opens successfully. The desktop initial layout was visually inspected, and a map-warning text selector defect was corrected and verified by reloading. Full exercise interaction and responsive layout have **not** been verified end to end. The first preview attempt timed out while the server ran inside the sandbox. After moving the server to an approved local process, HTTP worked, but browser policy blocked access to the failed preview tab. No alternative browser-control route was used.
 
 ## First manual acceptance pass
 
