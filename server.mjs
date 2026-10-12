@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.ico': 'image/x-icon' };
-const allowed = new Set(['index.html', 'styles.css', 'app.js', 'grader.js']);
+const allowed = new Set(['index.html', 'styles.css', 'app.js', 'grader.js', 'sonar.html', 'sonar.js', 'sonar-model.js']);
 
 export async function handleRequest(req, res) {
     if (req.method !== 'GET' && req.method !== 'HEAD') {

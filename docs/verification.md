@@ -2,13 +2,21 @@
 
 Date: 2026-10-12.
 
-- `npm test`: 10 tests passed, covering grading boundaries, the HTTP request handler, and a real loopback connection.
-- `node --check app.js`: passed.
+- `npm test`: 21 tests passed, covering both exercises' grading boundaries, the HTTP request handler, and a real loopback connection.
+- `node --check app.js`, `node --check sonar.js`, and `node --check sonar-model.js`: passed.
 - HTTP request to the running starter at `http://127.0.0.1:4173`: returned 200.
 - Grading tests cover initial failure, correct completion, unapplied drafts, wrong protocol/message, invalid fields, stale or mismatched receipt evidence, and wrong diagnosis.
 - Handler checks cover application assets and refusal to serve non-app files. A separate socket-based integration test verifies a real HTTP response.
 
-The environment's sandbox disallows loopback client sockets. All ten final tests passed with approved local-network access. The live preview also returned HTTP 200. Restricted environments may require local-network permission for the integration test.
+The environment's sandbox disallows loopback client sockets. All 21 final tests passed with approved local-network access. The live preview also returned HTTP 200. Restricted environments may require local-network permission for the integration test.
+
+## Exercise 02 verification
+
+Eleven model tests cover wrong destination, successful recovery, unapplied drafts, disabled output, paused/stale evidence, wrong transport/port, incomplete or empty message bundles, wrong position provenance, changed-settings evidence, reset, validation, and malformed state. Asset-serving checks include all three new exercise files.
+
+Browser checks passed for invalid-address rejection, draft-only corrections, incomplete-bundle packet receipt without valid navigation, full five-criterion completion, paused-source rejection, refresh clearing telemetry while preserving notes, reset, and independent storage between exercises. Desktop and 390px layouts were inspected; the narrow page had no horizontal overflow. These are focused smoke checks, not comprehensive accessibility or browser coverage.
+
+Use one tab per exercise. Concurrent editing of the same exercise in multiple tabs is not synchronized and may overwrite locally saved work.
 
 ## Browser verification update
 
@@ -33,4 +41,4 @@ The initial preview problem was an environment restriction, resolved by running 
 11. Reset through the confirmation dialog: initial settings, notes, hints, track, and completion should reset.
 12. Check keyboard-only use and a narrow window, especially the mission/hint controls.
 
-Record observed defects and update this document after the first browser acceptance pass.
+Record observed defects and update this document after subsequent acceptance passes.

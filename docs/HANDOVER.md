@@ -14,14 +14,16 @@ This repository is a starter for a surveyor to expand with his own Codex agents.
 6. `docs/vessel-workflow.md`: follow-up account of computers, connections, sonar navigation and interference.
 7. `docs/mbes-primer.md`: multibeam concepts and acquisition dependencies.
 8. `Downloads/README.md`: source library, local filenames, and download links.
+9. `docs/exercise-02.md`: second exercise fixtures, evidence, grading and remaining review needs.
 
 All these Markdown guides are intended to travel with the Git repository. No previous chat history is required to understand the project. Original third-party downloads under `Downloads/raw/` remain local and are excluded from Git; follow the source index to obtain them on another computer.
 
 ## Established decisions
 
 - Local browser application, no dependencies or external assets.
-- One end-to-end scenario before expanding the course.
-- Fictional UDP positioning-feed failure with a mismatched receiver port.
+- Two independently saved exercises: the positioning listener fault and the NavAQ-to-sonar output destination fault.
+- Exercise 01: fictional UDP positioning-feed failure with a mismatched receiver port.
+- Exercise 02: inspect source/output/receiver evidence, correct a fictional output destination, and verify valid towfish navigation; see docs/exercise-02.md.
 - Deterministic assessment of settings, reception, and selected diagnosis.
 - No connected AI tutor in this version; no real sensor or NavAQ connection.
 - Source-grounded technical teaching; no invented NavAQ menus or defaults.
@@ -29,11 +31,11 @@ All these Markdown guides are intended to travel with the Git repository. No pre
 
 ## What needs the surveyor's input
 
-The learner has supplied an equipment list and logical connections, recorded in docs/equipment-profile.md and docs/vessel-workflow.md. The later account names outbound GGA/ZDA/VTG/HDT messages but explicitly leaves COM/IP details unknown. Exact versions, several hardware models, detailed interfaces, project specifications, recurring fault evidence, and promotion criteria remain unknown. Review the initial scenario before treating it as professional instruction. Begin with the friend-validation checklist in the research notes.
+The learner has supplied an equipment list and logical connections, recorded in docs/equipment-profile.md and docs/vessel-workflow.md. The later account names outbound GGA/ZDA/VTG/HDT messages but explicitly leaves COM/IP details unknown. Exact versions, several hardware models, detailed interfaces, project specifications, recurring fault evidence, and promotion criteria remain unknown. Review both scenarios before treating them as professional instruction. Begin with the friend-validation checklist in the research notes.
 
 ## Suggested next session prompt
 
-> Read AGENTS.md and the Markdown documents listed in docs/HANDOVER.md. Run the existing tests and inspect the first exercise. Explain its current state, then help me add one reviewed exercise based on my actual work. Keep the app offline-capable. Separate verified source facts from simulator assumptions and update the handover, architecture, tests, and source notes when you change behavior.
+> Read AGENTS.md and the Markdown documents listed in docs/HANDOVER.md. Run the existing tests and inspect both exercises, including docs/exercise-02.md. Explain its current state, then help me add one reviewed exercise based on my actual work. Keep the app offline-capable. Separate verified source facts from simulator assumptions and update the handover, architecture, tests, and source notes when you change behavior.
 
 ## Documentation maintenance
 

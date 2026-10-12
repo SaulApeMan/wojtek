@@ -70,3 +70,7 @@ Primary vendor and standards-body pages were inspected using the available web r
 ## Learner-specific equipment evidence
 
 See [equipment-profile.md](equipment-profile.md) for the equipment account supplied on 2026-10-12. It is a separate evidence layer from manufacturer documentation: product capabilities do not prove the vessel's exact configuration. Use its unresolved details when planning the next exercises.
+
+## Second exercise implementation
+
+The reported NavAQ-to-sonar workflow now has a fictional teaching adaptation described in [exercise-02.md](exercise-02.md). Its IP addresses, UDP port, full-message requirement and grading rules are original exercise design choices, not facts established by the manufacturer sources above.

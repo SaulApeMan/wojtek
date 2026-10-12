@@ -17,7 +17,7 @@ test('local server serves browser modules and refuses non-app files', async () =
   assert.equal(page.status, 200);
   assert.match(page.body, /Survey Lab/);
   assert.match(page.headers['content-security-policy'], /connect-src 'none'/);
-  for (const asset of ['/styles.css', '/app.js', '/grader.js']) assert.equal((await request(asset)).status, 200);
+  for (const asset of ['/styles.css', '/app.js', '/grader.js', '/sonar.html', '/sonar.js', '/sonar-model.js']) assert.equal((await request(asset)).status, 200);
   for (const forbidden of ['/package.json', '/.git/config', '/../package.json', '/%2e%2e%2fpackage.json', '/missing', '/%ZZ']) {
     assert.notEqual((await request(forbidden)).status, 200);
   }

@@ -63,11 +63,11 @@ For the previously reported Veripos/Hydrins/time-reference and K-Sync relationsh
 6. **Interference:** What evidence implicated the altimeter? Was there a controlled on/off comparison or timestamped event record? Was it included in any trigger scheme? Do not infer a remedy from the attribution alone.
 7. **Calibration:** Which MBES/USBL calibrations and offsets were applied, in which application, using what units, axis conventions and sign conventions? “Calibrated” does not supply the missing values or prove current validity.
 
-## Proposed next exercise
+## Implemented teaching adaptation
 
-A useful next scenario is **trace the towfish navigation feed**. This is a proposal, not implemented behavior:
+Exercise 02 now implements **trace the towfish navigation feed** using original fictional fixtures. See [exercise-02.md](exercise-02.md). Its design follows these requirements; domain review by the learner is still pending:
 
-- Provide a reviewed fictional interface sheet that names every source, destination, transport and payload.
+- Provide an explicitly fictional interface sheet for learner review that names every source, destination, transport and payload.
 - Show observations at the positioning solution, NavAQ output and SSS input.
 - Introduce one explicit fault, such as a missing output message or an incorrect destination in that fixture.
 - Require the learner to isolate the failing stage and demonstrate reception at the intended destination.
@@ -78,4 +78,4 @@ An interference exercise could follow once the learner supplies the evidence use
 
 ## Status of the starter
 
-This document adds knowledge only. The current app remains the single fictional UDP position-feed exercise; none of the described vessel hardware, routing, heading derivation or interference is simulated yet.
+The app contains two exercises: the original fictional UDP position-feed fault and a simplified NavAQ-to-sonar navigation-output fault. The second exercise models a fictional destination and message/provenance contract inspired by this account. Actual vessel hardware, real routing, heading derivation and acoustic interference remain unimplemented.

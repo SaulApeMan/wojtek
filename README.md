@@ -16,6 +16,8 @@ Open http://127.0.0.1:4173 in your browser. Run automated checks with `npm test`
 
 There are no package dependencies, API keys, accounts, or external assets. The starter runs locally without internet once downloaded. Browser storage is local to the browser and origin; it is not a cloud account.
 
+Use one tab per exercise; concurrent edits to the same exercise are not synchronized.
+
 ## First exercise
 
 Investigate a missing positioning feed. Compare the simulated receiver configuration with a fictional setup sheet, correct the mismatch, apply the change, verify data reception, and submit a diagnosis. Progressive hints and deterministic feedback support the exercise.
@@ -24,9 +26,15 @@ The scenario's ports, message selection, traffic, vessel motion, and setup sheet
 
 The starter uses a rule-based tutor, not a connected AI model. This makes the assessed criteria inspectable and usable offline. A future AI tutor can explain evidence and cite reviewed references while the rule engine continues checking measurable outcomes.
 
+## Second exercise
+
+Open **02 · Towfish navigation** in the toolbar, or visit `/sonar.html`. Trace a missing feed through a synthetic source solution, NavAQ output, and the sonar topside receiver. Inspect each stage, correct the output destination, and verify both packet receipt and a complete navigation bundle from the correct source.
+
+The interface sheet uses fictional addresses and settings. It is based on the learner's reported workflow, not his actual vessel configuration. See [docs/exercise-02.md](docs/exercise-02.md) for the scenario contract and assessment boundaries. Each exercise has separate browser progress; the second exercise requires fresh telemetry and a new assessment after reload.
+
 ## Continue with Codex
 
-Open this repository in Codex and read `AGENTS.md`. Start by running the app and tests. Keep one complete exercise working as new scenarios are introduced.
+Open this repository in Codex and read `AGENTS.md`. Start by running the app and tests. Keep both complete exercises working as new scenarios are introduced.
 
 Useful next inputs from the surveyor:
 
@@ -39,7 +47,7 @@ Keep personal books, proprietary manuals, client survey data, screenshots contai
 
 ## Development priorities
 
-1. Validate the first exercise with the surveyor and document corrections.
+1. Validate both exercises with the surveyor and document corrections.
 2. Add reviewed scenario definitions and source references.
 3. Extend training to configuration checks, data quality diagnosis, and handover reasoning.
 4. Add optional source-grounded AI tutoring with an explicit online mode.
@@ -57,11 +65,11 @@ Start at [docs/HANDOVER.md](docs/HANDOVER.md) for the reading order, established
 
 ## MBES context
 
-Read [docs/mbes-primer.md](docs/mbes-primer.md) for an introduction to multibeam echosounders, their relationship to NavAQ, and proposed later exercises. The current starter simulates only a positioning-feed dependency, not multibeam sonar or bathymetric processing.
+Read [docs/mbes-primer.md](docs/mbes-primer.md) for an introduction to multibeam echosounders, their relationship to NavAQ, and proposed later exercises. The current starter simulates positioning-feed and sonar-navigation-output dependencies, not multibeam acoustics or bathymetric processing.
 
 ## Verification
 
-See [docs/verification.md](docs/verification.md) for automated checks, the current browser-testing limitation, and a manual acceptance checklist.
+See [docs/verification.md](docs/verification.md) for automated checks, the browser verification scope, and a manual acceptance checklist.
 
 ## Learner equipment context
 

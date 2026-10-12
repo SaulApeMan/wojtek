@@ -13,13 +13,15 @@ The local server only serves an explicit allowlist of application files. It does
 | `index.html` | Accessible application structure and exercise controls |
 | `styles.css` | Responsive visual layout and presentation |
 | `app.js` | Browser state, synthetic telemetry, events, persistence, and rendering |
-| `grader.js` | Fictional fixture settings, input validation, and pure assessment rules |
+| `grader.js` | Exercise 01 fixture settings, input validation, and pure assessment rules |
+| `sonar.html` / `sonar.js` | Exercise 02 page, controls, rendering and independent browser storage |
+| `sonar-model.js` | Versioned Exercise 02 definition, validation, simulated evidence transitions and pure grading |
 | `server.mjs` | Loopback static server with a restricted file allowlist |
 | `package.json` | Run and test commands |
 | `docs/research-notes.md` | Domain grounding and sources |
 | `Downloads/README.md` | Public-reference library index |
 
-## Exercise contract
+## Exercise 01 contract
 
 The fictional upstream source emits GGA positioning messages over simulated UDP to destination port 5001. The initial receiving configuration uses UDP and GGA but listens on port 5002. These values belong only to the exercise.
 
@@ -35,10 +37,18 @@ This establishes completion of the fictional scenario only. It does not measure 
 
 ## Extension approach
 
-For a second scenario, first extract the scenario-specific configuration, hints, diagnosis options, and criteria into a clearly versioned definition. Keep validation and grading pure and testable; do not bury answers in visual components. Retain an explicit association between applied configuration and its telemetry so stale evidence cannot pass a changed configuration.
+Exercise 02 uses its own versioned definition in sonar-model.js. Both pages share the visual stylesheet and link to each other; Exercise 01 retains its existing module and storage to avoid invalidating its saved progress. Before adding more scenarios, consider shared presentation helpers without merging their state. Keep validation and grading pure and testable; do not bury answers in visual components. Retain an explicit association between applied configuration and its telemetry so stale evidence cannot pass a changed configuration.
 
 If an AI tutor is added, use an explicit online mode and a secure server-side API boundary. Keep API keys out of browser code and source control. The tutor should explain reviewed evidence and cite sources; deterministic checks should remain responsible for observable pass criteria.
 
 Store only local learning state in the browser. Version persistence formats when their meaning changes, validate restored values, and recover from unavailable or malformed storage. Update this guide when responsibilities or data flow change.
 
 The interface includes a local view-navigation toolbar and a light desktop-style CSS layout. On desktop the sensor/reference panes sit beside the chart, with an event log below; controls adapt to available width. See `docs/interface-reference.md` for visual sources and fidelity boundaries.
+
+## Exercise 02 flow
+
+`sonar.html` loads `sonar.js`, which calls pure functions from `sonar-model.js`. The model supplies fixture settings, hints, input validation, canonical output configuration keys, telemetry transitions and the five-criterion assessment. See `docs/exercise-02.md` for the full contract.
+
+The simulation advances source, output and receiver observations separately. Traffic may leave the output without reaching the receiver; packets can reach the receiver without satisfying the expected navigation bundle/provenance. Grading uses only observations belonging to the current applied configuration. UI inputs are drafts until Apply.
+
+The second page uses `survey-lab.sonar-feed.v1` browser storage, separate from Exercise 01's `survey-lab.exercise-01.v1`. It restores learner inputs and progress context but obtains fresh evidence after reload; old counters do not establish current recovery. Reset remains exercise-local. These are two deterministic training pages, not actual serial/UDP clients or a NMEA parser.

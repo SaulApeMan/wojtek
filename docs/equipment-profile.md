@@ -47,7 +47,7 @@ One must not be used as evidence that the other is correct. A coherent clock doe
 
 ## Training implications
 
-The current app still teaches only the fictional positioning-feed connection exercise. This equipment description does not add implemented sensor models or prove its settings match the learner's vessel.
+The app teaches a fictional positioning-feed connection exercise and a second fictional NavAQ-to-sonar output exercise (docs/exercise-02.md). This equipment description does not prove their settings match the learner's vessel or supply actual sensor models.
 
 Proposed next scenarios, after review by the learner:
 
