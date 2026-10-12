@@ -42,3 +42,7 @@ For every functional change, update the affected Markdown guide in the same comm
 ## MBES extension context
 
 Read `docs/mbes-primer.md` before adding multibeam exercises. The learner identifies the MBES as R2Sonic Voxometer and reports using NavAQ for its backscatter acquisition. See docs/equipment-profile.md; the exact hardware/firmware/software configuration and responsibilities still need confirmation. Do not extend the first scenario's pass result into a claim that an MBES system is ready for acquisition.
+
+## Interface styling
+
+Read `docs/interface-reference.md` for the light desktop-style visual reference. It is based on historical public examples, not a verified reproduction of the learner's exact NavAQ version. Keep all existing exercise controls reachable when changing panel placement.

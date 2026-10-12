@@ -40,3 +40,5 @@ For a second scenario, first extract the scenario-specific configuration, hints,
 If an AI tutor is added, use an explicit online mode and a secure server-side API boundary. Keep API keys out of browser code and source control. The tutor should explain reviewed evidence and cite sources; deterministic checks should remain responsible for observable pass criteria.
 
 Store only local learning state in the browser. Version persistence formats when their meaning changes, validate restored values, and recover from unavailable or malformed storage. Update this guide when responsibilities or data flow change.
+
+The interface includes a local view-navigation toolbar and a light desktop-style CSS layout. On desktop the sensor/reference panes sit beside the chart, with an event log below; controls adapt to available width. See `docs/interface-reference.md` for visual sources and fidelity boundaries.

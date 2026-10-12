@@ -68,3 +68,7 @@ See [docs/verification.md](docs/verification.md) for automated checks, the curre
 [docs/equipment-profile.md](docs/equipment-profile.md) records the learner's reported Voxometer, EdgeTech 4205, Innomar/SESWIN, magnetometer, HiPAP, Veripos, Hydrins, Seapath and K-Sync setup. It separates reported vessel connections from manufacturer-verified capabilities and identifies the next information needed for realistic exercises.
 
 The follow-up [vessel workflow](docs/vessel-workflow.md) documents reported topside computers, data paths, sonar navigation outputs, towing geometry, and a suspected interference incident, with explicit questions for the learner.
+
+## Visual reference
+
+The starter uses a light desktop-style workspace with compact, bordered survey panels inspired by public NavAQ images. See [docs/interface-reference.md](docs/interface-reference.md) for sources, design choices, and limits of the resemblance. The windows are responsive panels, not draggable docks.

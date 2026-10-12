@@ -10,7 +10,13 @@ Date: 2026-10-12.
 
 The environment's sandbox disallows loopback client sockets. All ten final tests passed with approved local-network access. The live preview also returned HTTP 200. Restricted environments may require local-network permission for the integration test.
 
-Follow-up: the browser preview now opens successfully. The desktop initial layout was visually inspected, and a map-warning text selector defect was corrected and verified by reloading. Full exercise interaction and responsive layout have **not** been verified end to end. The first preview attempt timed out while the server ran inside the sandbox. After moving the server to an approved local process, HTTP worked, but browser policy blocked access to the failed preview tab. No alternative browser-control route was used.
+## Browser verification update
+
+The browser preview now opens successfully. The desktop initial layout was inspected and the map-warning text selector corrected. After adding the light NavAQ-inspired appearance, the desktop layout and a 390px viewport were visually checked; the narrow view had no horizontal page overflow and retained a single hints control.
+
+The browser exercise flow was also checked: initial assessment fails with 0/3, applying UDP/5001/GGA restores incoming data, the correct diagnosis completes all three criteria, refresh preserves completion, and reset restores UDP/5002/GGA with cleared progress. This is a focused smoke check, not comprehensive browser or accessibility coverage.
+
+The initial preview problem was an environment restriction, resolved by running the loopback server with approved local-network access. No browser security setting was changed.
 
 ## First manual acceptance pass
 
